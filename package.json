@@ -1,12 +1,12 @@
 {
   "name": "openalex-js",
+  "type": "module",
   "version": "1.0.0",
   "description": "TypeScript client for the OpenAlex API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "prepare": "npm run build",
@@ -20,7 +20,11 @@
     "research",
     "typescript"
   ],
-  "author": "Your Name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaliaboi/openalex-js"
+  },
+  "author": "Abhishek Kalia",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.0",
