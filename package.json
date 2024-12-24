@@ -23,8 +23,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
     "prepare": "npm run build",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write \"src/**/*.ts\""
