@@ -1,6 +1,6 @@
 // src/index.ts
 import fetch from "cross-fetch";
-import {
+import type {
   OpenAlexConfig,
   FilterParams,
   WorksResponse,
@@ -15,11 +15,11 @@ import {
   Topic,
   Publisher,
   Funder,
-} from "./types";
+} from "./types/index.js";
 
-export * from "./types";
+export * from "./types/index.js";
 
-class OpenAlex {
+export class OpenAlex {
   private baseUrl: string;
   private email?: string;
   private perPage: number;

@@ -1,10 +1,26 @@
 {
   "name": "openalex-js",
-  "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "TypeScript client for the OpenAlex API",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "cross-fetch": "^3.1.5"
+  },
   "scripts": {
     "build": "tsc",
     "test:watch": "jest --watch",
